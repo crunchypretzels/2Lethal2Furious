@@ -25,18 +25,19 @@
 		shield_inhand = FALSE, \
 	)
 
-/obj/item/clothing/belt/shield_belt
-	name = "Tycho portable shield generator"
+/obj/item/clothing/shield_belt
+	name = "Tycho shielded belt"
 	desc = "A belt projector capable of providing a standard infantry-portable energy shield. \
 	More capable than the 'Milano' bracers, this can absorb five shots before breaking, and only takes about thirty seconds to recharge."
 	icon = 'modular_lethal/shield_generators/icons/shield_objects.dmi'
 	icon_state = "belt"
 	worn_icon = 'modular_lethal/shield_generators/icons/shields_worn.dmi'
+	slot_flags = ITEM_SLOT_BELT
 	resistance_flags = FIRE_PROOF
 	siemens_coefficient = 0.5
 	clothing_flags = THICKMATERIAL
 
-/obj/item/clothing/belt/shield_belt/Initialize(mapload)
+/obj/item/clothing/shield_belt/Initialize(mapload)
 	. = ..()
 	AddComponent( \
 		/datum/component/shielded/shield_belt, \
