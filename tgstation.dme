@@ -7853,6 +7853,8 @@
 #include "modular_lethal\paxilweapons_real\code\guns\yari.dm"
 #include "modular_lethal\paxilweapons_real\code\guns\zomushi.dm"
 #include "modular_lethal\random_pouches\code\bags.dm"
+#include "modular_lethal\shield_generator\code\paxil_shield_component.dm"
+#include "modular_lethal\shield_generator\code\shield_generators.dm"
 #include "modular_lethal\super_armor\code\armor_types\filtre_armor.dm"
 #include "modular_lethal\super_armor\code\armor_types\hardened.dm"
 #include "modular_lethal\super_armor\code\armor_types\korund.dm"
