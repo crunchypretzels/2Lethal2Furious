@@ -18,7 +18,7 @@
 		shield_inhand,
 		run_hit_callback,
 		shield_overlay_alpha = 150,
-		shield_overlay_color = "#77bd5d",
+		shield_overlay_color = "#99e905",
 	)
 
 	. = ..()
@@ -61,3 +61,15 @@
 /obj/effect/temp_visual/shield_pulse/twitch_afterimage/Initialize(mapload)
 	. = ..()
 	animate(src, duration, easing = EASE_OUT, alpha = 0)
+
+/datum/component/shielded/shield_belt/apply_recharge(datum/source, obj/item/shield_recharger)
+	SIGNAL_HANDLER
+
+	if(!istype(/obj/item/shield_recharger))
+		return
+
+
+
+	if(current_charges > max_charges)
+		current_charges = max_charges
+

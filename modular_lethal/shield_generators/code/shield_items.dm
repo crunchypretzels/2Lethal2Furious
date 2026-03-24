@@ -16,8 +16,8 @@
 	AddComponent( \
 		/datum/component/shielded/shield_belt, \
 		max_charges = 1, \
-		recharge_start_delay = 1 MINUTES, \
-		charge_recovery = 1, \
+		recharge_start_delay = 0, \
+		charge_recovery = 0, \
 		lose_multiple_charges = FALSE, \
 		show_charge_as_alpha = FALSE, \
 		shield_icon_file = 'modular_lethal/shield_generators/icons/shield_overlay.dmi', \
