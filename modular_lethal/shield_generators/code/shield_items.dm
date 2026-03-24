@@ -26,9 +26,9 @@
 	)
 
 /obj/item/clothing/shield_belt
-	name = "Tycho shielded belt"
-	desc = "A belt projector capable of providing a standard infantry-portable energy shield. \
-	More capable than the 'Milano' bracers, this can absorb five shots before breaking, and only takes about thirty seconds to recharge."
+	name = "Holdplacer shielded belt"
+	desc = "A belt projector capable of providing a strong personal energy shield. \
+	More capable than the 'Milano' bracers, this can absorb five shots before breaking, but recharges slowly."
 	icon = 'modular_lethal/shield_generators/icons/shield_objects.dmi'
 	icon_state = "belt"
 	worn_icon = 'modular_lethal/shield_generators/icons/shields_worn.dmi'
@@ -42,8 +42,9 @@
 	AddComponent( \
 		/datum/component/shielded/shield_belt, \
 		max_charges = 5, \
-		recharge_start_delay = 30 SECONDS, \
-		charge_recovery = 5, \
+		recharge_start_delay = 15 SECONDS, \
+		charge_increment_delay = 15 SECONDS, \
+		charge_recovery = 1, \
 		lose_multiple_charges = FALSE, \
 		show_charge_as_alpha = FALSE, \
 		shield_icon_file = 'modular_lethal/shield_generators/icons/shield_overlay.dmi', \
